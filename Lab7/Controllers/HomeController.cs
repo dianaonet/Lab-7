@@ -33,5 +33,11 @@ namespace Lab7.Controllers
         {
             return Calc();
         }
+
+        [HttpGet]
+        public ActionResult VerbsTest()
+        {
+            return View();
+        }
     }
 }
