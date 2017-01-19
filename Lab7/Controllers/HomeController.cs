@@ -39,5 +39,12 @@ namespace Lab7.Controllers
         {
             return View();
         }
+
+      //      [ActionName("authorize")]
+       [Authorize(Roles = "Admin")]
+        public ActionResult ThisMethodNeedsAuthorization()
+        {
+            return Content("Hello !!!");
+        }
     }
 }
