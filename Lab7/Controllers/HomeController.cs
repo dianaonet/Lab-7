@@ -8,15 +8,16 @@ namespace Lab7.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult SomeMethodName()
-        {
-            return View("");
-        }
-
-        // GET: Home
         public ActionResult Index()
         {
             return View();
+        }
+
+
+        [ActionName("about")]
+        public ActionResult SomeMethodName()
+        {
+            return View("");
         }
     }
 }
